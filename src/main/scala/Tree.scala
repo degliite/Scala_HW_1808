@@ -5,15 +5,20 @@ object Tree extends App {
 
   for (i <- 0 until 3) {
     for (j <- 0 until 3 - i) {
-      print (" ")
+      print(" ")
     }
-    for (z <- 0 until (i * 2 + 1)){
+    for (z <- 0 until (i * 2 + 1)) {
       print("*")
     }
     println()
   }
 
-
+  println(" ")
+//Please take into account this last solution
+  var maxValue = 3
+      for (i <- 1 to maxValue; j = maxValue - i) {
+            println(" "*j + "*"*i + "*"*(i-1))
+      }
 }
 
 
