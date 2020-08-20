@@ -15,11 +15,22 @@ object Tree extends App {
 
   println(" ")
 //Please take into account this last solution
-  var maxValue = 3
+  var maxValue = 5
       for (i <- 1 to maxValue; j = maxValue - i) {
             println(" "*j + "*"*i + "*"*(i-1))
       }
+
+
+  var treeH = 3
+  if (!args.isEmpty)treeH = args (0).toInt
+  val result = Range(1,treeH+1).map(n => " "*(treeH-n)+ "*"*(n*2-1))
+  result.foreach(println)
+
+
+
 }
+
+
 
 
 
